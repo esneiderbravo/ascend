@@ -5,9 +5,6 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-from dotenv import load_dotenv
-load_dotenv()
-
 app = Flask(__name__)
 CORS(app)
 app.config[
@@ -16,4 +13,4 @@ app.config[
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-TOKEN_SECRET_KEY = os.getenv("TOKEN_SECRET_KEY")
+TOKEN_SECRET_KEY = "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"
