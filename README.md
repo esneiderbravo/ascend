@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Ascend: Your Ultimate Tool for League of Legends Gaming and Coaching
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Ascend, your all-in-one solution for enhancing your League of Legends gaming experience and coaching journey. Ascend leverages the power of Riot Games' developer portal APIs to provide you with comprehensive tools and resources tailored to your needs as a League of Legends player or coach.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Ascend offers a suite of features designed to elevate your League of Legends experience:
 
-### `npm start`
+- **Real-Time Game Data**: Access real-time game data, including match statistics, player performance metrics, and live updates from ongoing matches.
+  
+- **Coaching Tools**: Utilize coaching tools such as VOD review, strategy analysis, and personalized feedback to improve your gameplay and optimize your team's performance.
+  
+- **Community Interaction**: Connect with fellow gamers and coaches through forums, chat rooms, and collaborative gameplay sessions. Share strategies, discuss patch notes, and find like-minded individuals to team up with.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Personalized Insights**: Receive personalized insights and recommendations based on your gameplay style, preferred champions, and performance trends. Ascend adapts to your needs, providing tailored suggestions to help you reach your full potential.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get started with Ascend, follow these simple steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository**: Clone the Ascend repository to your local machine.
 
-### `npm run build`
+2. **Install Dependencies**: Navigate to the project directory and run `npm install` to install all necessary dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Start the Development Server**: Launch the development server by running `npm start`. This will open Ascend in your default web browser, allowing you to begin exploring its features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once Ascend is up and running, you can:
 
-### `npm run eject`
+- View real-time game data, including match details, player statistics, and live updates.
+  
+- Access coaching tools to analyze gameplay, review strategies, and receive personalized feedback.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Engage with the community by joining forums, participating in chat rooms, and connecting with other gamers and coaches.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Customize your experience by adjusting settings, preferences, and notifications to suit your needs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+We welcome contributions from the League of Legends community to help improve Ascend and make it even more valuable for players and coaches. Whether you're a seasoned developer, a passionate gamer, or a dedicated coach, there are many ways to contribute:
 
-## Learn More
+- **Feature Requests**: Share your ideas for new features or improvements that you'd like to see in Ascend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Bug Reports**: Report any bugs or issues you encounter while using Ascend so that we can address them promptly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Code Contributions**: Contribute code enhancements, optimizations, or fixes to help make Ascend more robust and efficient.
 
-### Code Splitting
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you have any questions, feedback, or need assistance with Ascend, feel free to reach out to our support team. We're here to help you get the most out of your League of Legends experience.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ascend is licensed under the [MIT License](https://opensource.org/licenses/MIT), which means you're free to use, modify, and distribute the software as you see fit. See the `LICENSE` file for more details.
 
-### Making a Progressive Web App
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We would like to express our gratitude to Riot Games for providing access to their developer portal APIs, which have made Ascend possible. We also thank the League of Legends community for their ongoing support and enthusiasm for our project.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for choosing Ascend as your go-to tool for League of Legends gaming and coaching. Let's ascend together and reach new heights in the Summoner's Rift!
