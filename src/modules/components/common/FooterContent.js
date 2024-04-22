@@ -6,15 +6,38 @@ import {
 } from "../../styles/layout/Layout.styled";
 import usaIcon from "../../../resources/layout/usa.png";
 import spainIcon from "../../../resources/layout/spain.png";
-import React from "react";
-import { useAppContext } from "../../providers/AppProvider";
+import React, { useContext } from "react";
+import { setLanguage } from "../../actions/state";
+import english from "../../language/en_us.json";
+import spanish from "../../language/es_es.json";
+import AppContext from "../../context/app";
 
 /**
  * Footer Content Component
  * @return React.JSX.Element
  * */
 const FooterContent = () => {
-  const { language, handleChangeLanguage } = useAppContext();
+  const [state, dispatch] = useContext(AppContext);
+  const { language } = state;
+  /**
+   * Handle language change events
+   * @param {EventTarget} event - event with language change target.
+   * **/
+  const handleChangeLanguage = (event) => {
+    const languageSelected = event.target.value;
+    switch (languageSelected) {
+      case "en_us":
+        dispatch(setLanguage(english));
+        break;
+      case "es_es":
+        setLanguage(spanish);
+        break;
+      default:
+        setLanguage(english);
+        break;
+    }
+  };
+
   return (
     <Grid
       container

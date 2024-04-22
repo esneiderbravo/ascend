@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import GoogleSignInContainer from "../../containers/auth/GoogleSignInContainer";
-import { useAppContext } from "../../providers/AppProvider";
+import AppContext from "../../context/app";
 
 /**
  * Layout Content Component
  * @return React.JSX.Element
  * */
 const LayoutContent = () => {
-  const { language } = useAppContext();
+  const [state] = useContext(AppContext);
+  const { language } = state;
   return (
     <Container
       maxWidth="auto"

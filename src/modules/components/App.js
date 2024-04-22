@@ -1,12 +1,10 @@
 import React from "react";
 import { createTheme, GlobalStyles, ThemeProvider } from "@mui/material";
-import Main from "./modules/components/Main";
-import { AppProvider } from "./modules/providers/AppProvider";
+import Main from "./Main";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import { GOOGLE_AUTH_CLIENT_ID } from "./modules/utils/constants";
-import HeaderContent from "./modules/components/common/HeaderContent";
-import FooterContent from "./modules/components/common/FooterContent";
-import { AuthProvider } from "./modules/providers/AuthProvider";
+import { GOOGLE_AUTH_CLIENT_ID } from "../utils/constants";
+import HeaderContent from "./common/HeaderContent";
+import FooterContent from "./common/FooterContent";
 
 const familyFont = ["Poppins", "Maven Pro"].join(",");
 const theme = createTheme({
@@ -74,16 +72,12 @@ const App = () => {
   return (
     <React.StrictMode>
       <GoogleOAuthProvider clientId={GOOGLE_AUTH_CLIENT_ID}>
-        <AppProvider>
-          <AuthProvider>
-            <ThemeProvider theme={theme}>
-              <GlobalStyles styles={{ body: theme.body }} />
-              <HeaderContent />
-              <Main />
-              <FooterContent />
-            </ThemeProvider>
-          </AuthProvider>
-        </AppProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles styles={{ body: theme.body }} />
+          <HeaderContent />
+          <Main />
+          <FooterContent />
+        </ThemeProvider>
       </GoogleOAuthProvider>
     </React.StrictMode>
   );

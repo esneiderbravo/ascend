@@ -1,10 +1,15 @@
 from flask_restful import Resource
+from flask import jsonify
 
 
 class ConnectionAPI(Resource):
-    def get(self):
+    @classmethod
+    def get(cls):
         """
-        Get connection check
-        :return: {"message": "Service ON"}
+        Get connection check.
+
+        Returns:
+            dict: A JSON object indicating that the service is ON.
+                Example: {"message": "Service ON!"}
         """
-        return {"message": "Service ON!"}, 200
+        return jsonify({"message": "Service ON!"}), 200

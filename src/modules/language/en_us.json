@@ -6,6 +6,9 @@
     "es": "Spanish"
   },
   "loginMessages": {
-    "success": "User authenticated successfully!"
+    "success": "You have been successfully logged in!"
+  },
+  "logoutMessages": {
+    "success": "You have been successfully logged out!"
   }
 }

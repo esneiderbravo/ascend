@@ -1,41 +1,50 @@
 from flask_restful import Resource, reqparse
-
 from ascend.app.utils.jwt_helper import JWTHelper
 from ascend.database.managers.user import UserManager
 
 
 class AuthAPI(Resource):
     """
-    Auth API
+    Auth API.
+
+    Handles user authentication.
     """
 
     @classmethod
     def post(cls):
         """
-        Make authentication request
-        :return: Authentication response
+        Make an authentication request.
+
+        Returns:
+            dict: Authentication response including user data if valid token,
+                  otherwise returns an error.
         """
         try:
-            params = cls.__get_post_params()
-            token = params.get("token")
-            isValid, userData = JWTHelper.validate(token)
-            if isValid and userData:
-                username = userData["email"]
-                userStored = UserManager.get(filter_values={"username": username})
-                if not userStored:
+            token = cls._get_token_from_request()
+            is_valid, user_data = JWTHelper.validate(token)
+
+            if is_valid and user_data:
+                username = user_data.get("email")
+                if not UserManager.get(filter_values={"username": username}):
                     UserManager.create({"username": username, "email": username})
-                return {"userData": userData}, 200
+
+                return {"userData": user_data}, 200
+            else:
+                return {"error": "Invalid token"}, 401
+
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-            raise
+            return {"error": "An unexpected error occurred"}, 500
 
     @classmethod
-    def __get_post_params(cls):
+    def _get_token_from_request(cls):
         """
-        Returns post params
-        :return: request params
+        Get the token from the request.
+
+        Returns:
+            str: Token string.
         """
         parser = reqparse.RequestParser()
         parser.add_argument("token", type=str, required=True)
-        params = dict(parser.parse_args())
-        return params
+        args = parser.parse_args()
+        return args.get("token")

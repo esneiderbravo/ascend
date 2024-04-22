@@ -1,7 +1,3 @@
-"""
-DB Setup
-"""
-
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -26,3 +22,6 @@ class DBContextManager:
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.db_instance.close()
+        if exc_type:
+            # Handle exceptions here, if necessary
+            pass

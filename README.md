@@ -7,9 +7,7 @@ Welcome to Ascend, your all-in-one solution for enhancing your League of Legends
 Ascend offers a suite of features designed to elevate your League of Legends experience:
 
 - **Real-Time Game Data**: Access real-time game data, including match statistics, player performance metrics, and live updates from ongoing matches.
-  
 - **Coaching Tools**: Utilize coaching tools such as VOD review, strategy analysis, and personalized feedback to improve your gameplay and optimize your team's performance.
-  
 - **Community Interaction**: Connect with fellow gamers and coaches through forums, chat rooms, and collaborative gameplay sessions. Share strategies, discuss patch notes, and find like-minded individuals to team up with.
 
 - **Personalized Insights**: Receive personalized insights and recommendations based on your gameplay style, preferred champions, and performance trends. Ascend adapts to your needs, providing tailored suggestions to help you reach your full potential.
@@ -29,7 +27,6 @@ To get started with Ascend, follow these simple steps:
 Once Ascend is up and running, you can:
 
 - View real-time game data, including match details, player statistics, and live updates.
-  
 - Access coaching tools to analyze gameplay, review strategies, and receive personalized feedback.
 
 - Engage with the community by joining forums, participating in chat rooms, and connecting with other gamers and coaches.

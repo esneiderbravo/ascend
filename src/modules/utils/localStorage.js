@@ -10,13 +10,13 @@ class LocalStorage {
    * @param {String} value
    *   Var value for to be storage in localStorage.
    */
-  static setItem = (key, value) => {
+  static setItem(key, value) {
     try {
       localStorage.setItem(key, value);
     } catch (error) {
       console.error(`Error saving ${key}: ${value}`);
     }
-  };
+  }
 
   /**
    * Retrieves the localStorage value of a given var name
@@ -26,13 +26,13 @@ class LocalStorage {
    * @@return {String}
    *   Var value storaged in localStorage.
    */
-  static getItem = (key) => {
+  static getItem(key) {
     try {
       return localStorage.getItem(key);
     } catch (error) {
       console.error(`Error getting ${key}`);
     }
-  };
+  }
 
   /**
    * Retrieves the localStorage value of a given var name
@@ -42,13 +42,13 @@ class LocalStorage {
    * @@return {String}
    *   Var value storaged in localStorage.
    */
-  static removeItem = (key) => {
+  static removeItem(key) {
     try {
       return localStorage.removeItem(key);
     } catch (error) {
       console.error(`Error removing ${key}`);
     }
-  };
+  }
 }
 
 export default LocalStorage;
