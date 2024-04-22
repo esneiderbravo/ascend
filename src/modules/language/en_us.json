@@ -10,5 +10,6 @@
   },
   "logoutMessages": {
     "success": "You have been successfully logged out!"
-  }
+  },
+  "logoutTitleButton": "Logout"
 }

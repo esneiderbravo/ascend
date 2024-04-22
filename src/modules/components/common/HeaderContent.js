@@ -8,7 +8,7 @@ import NotificationContent from "../notification/NotificationContent";
  */
 const HeaderContent = () => {
   return (
-    <Grid container spacing={2} justifyContent="center">
+    <Grid container spacing={2} justifyContent="center" position="fixed">
       <Grid item xs={12} md={8} display="flex" justifyContent="center">
         <NotificationContent />
       </Grid>

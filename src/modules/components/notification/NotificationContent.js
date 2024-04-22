@@ -23,7 +23,7 @@ const NotificationContent = () => {
   return (
     <>
       {notificationType && (
-        <Alert severity={notificationType} sx={{ width: "20%" }}>
+        <Alert severity={notificationType} sx={{ width: "40%" }}>
           {notificationInfo}
         </Alert>
       )}
