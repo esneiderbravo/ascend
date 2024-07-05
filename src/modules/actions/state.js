@@ -2,24 +2,24 @@
  * Set states
  */
 const setAuthData = (authData) => ({
-  type: "setAuthData",
+  type: 'setAuthData',
   payload: {
-    authData,
-  },
-});
+    authData
+  }
+})
 
 const setLanguage = (language) => ({
-  type: "setLanguage",
+  type: 'setLanguage',
   payload: {
-    language,
-  },
-});
+    language
+  }
+})
 
 const setNotification = (notification) => ({
-  type: "setNotification",
+  type: 'setNotification',
   payload: {
-    notification,
-  },
-});
+    notification
+  }
+})
 
-export { setAuthData, setLanguage, setNotification };
+export { setAuthData, setLanguage, setNotification }

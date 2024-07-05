@@ -1,5 +1,5 @@
-import React from "react";
-import DashboardContent from "../../components/dashboard/DashboardContent";
+import React, { useState } from 'react'
+import DashboardContent from '../../components/dashboard/DashboardContent'
 
 /**
  * DashboardContainer Component
@@ -8,10 +8,19 @@ import DashboardContent from "../../components/dashboard/DashboardContent";
  * @return React.JSX.Element
  */
 const DashboardContainer = () => {
-  return <DashboardContent />;
-};
+  const [formData, setFormData] = useState({
+    summonerName: null,
+    tagLine: ''
+  })
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    console.log(formData)
+  }
+
+  return <DashboardContent formData={formData} setFormData={setFormData} handleSubmit={handleSubmit} />
+}
 
 // Define propTypes if the component starts accepting props in the future
-DashboardContainer.propTypes = {};
+DashboardContainer.propTypes = {}
 
-export default DashboardContainer;
+export default DashboardContainer

@@ -1,5 +1,5 @@
-import React from "react";
-import LayoutContent from "../../components/layout/LayoutContent";
+import React from 'react'
+import LayoutContent from '../../components/layout/LayoutContent'
 
 /**
  * Layout Container Component
@@ -8,10 +8,10 @@ import LayoutContent from "../../components/layout/LayoutContent";
  * @return React.JSX.Element
  */
 const LayoutContainer = () => {
-  return <LayoutContent />;
-};
+  return <LayoutContent />
+}
 
 // Define propTypes if the component starts accepting props in the future
-LayoutContainer.propTypes = {};
+LayoutContainer.propTypes = {}
 
-export default LayoutContainer;
+export default LayoutContainer

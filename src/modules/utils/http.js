@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios'
 
 /**
  * HTTP helper
@@ -12,12 +12,12 @@ class HTTP {
   static async auth(url, body) {
     try {
       return await axios({
-        method: "post",
+        method: 'post',
         url,
-        data: body,
-      });
+        data: body
+      })
     } catch (error) {
-      return error;
+      return error
     }
   }
 
@@ -30,20 +30,20 @@ class HTTP {
   static async get(token, url, params) {
     try {
       let request = {
-        method: "get",
+        method: 'get',
         url,
         headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      };
-
-      if (params) {
-        request["params"] = params;
+          Authorization: `Bearer ${token}`
+        }
       }
 
-      return await axios(request);
+      if (params) {
+        request['params'] = params
+      }
+
+      return await axios(request)
     } catch (error) {
-      return error;
+      return error
     }
   }
 
@@ -56,15 +56,15 @@ class HTTP {
   static async post(token, url, body) {
     try {
       return await axios({
-        method: "post",
+        method: 'post',
         url,
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`
         },
-        data: body,
-      });
+        data: body
+      })
     } catch (error) {
-      return error;
+      return error
     }
   }
 
@@ -77,16 +77,16 @@ class HTTP {
   static async postFiles(token, url, formData) {
     try {
       return await axios({
-        method: "post",
+        method: 'post',
         url,
         headers: {
           Authorization: `Bearer ${token}`,
-          "Content-Type": "multipart/form-data",
+          'Content-Type': 'multipart/form-data'
         },
-        data: formData,
-      });
+        data: formData
+      })
     } catch (error) {
-      return error;
+      return error
     }
   }
 
@@ -99,15 +99,15 @@ class HTTP {
   static async put(token, url, body) {
     try {
       return await axios({
-        method: "put",
+        method: 'put',
         url,
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`
         },
-        data: body,
-      });
+        data: body
+      })
     } catch (error) {
-      return error;
+      return error
     }
   }
 
@@ -119,16 +119,16 @@ class HTTP {
   static async delete(token, url) {
     try {
       return await axios({
-        method: "delete",
+        method: 'delete',
         url,
         headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+          Authorization: `Bearer ${token}`
+        }
+      })
     } catch (error) {
-      return error;
+      return error
     }
   }
 }
 
-export default HTTP;
+export default HTTP

@@ -1,5 +1,5 @@
-import { AUTH_SERVICE_URL } from "../../utils/constants";
-import HTTPHandler from "../../utils/httpHandler";
+import { AUTH_SERVICE_URL } from '../../utils/constants'
+import HTTPHandler from '../../utils/httpHandler'
 
 /*
  * Authenticate user
@@ -7,6 +7,6 @@ import HTTPHandler from "../../utils/httpHandler";
  * @return {Promise}
  * */
 export const authenticateUser = async (token) => {
-  const body = { token: token };
-  return await HTTPHandler.auth(AUTH_SERVICE_URL, body);
-};
+  const body = { token: token }
+  return await HTTPHandler.auth(AUTH_SERVICE_URL, body)
+}

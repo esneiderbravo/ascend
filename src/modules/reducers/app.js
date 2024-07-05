@@ -1,19 +1,18 @@
-import english from "../language/en_us.json";
+import english from '../language/en_us.json'
 
 const notification = {
   hidden: true,
-  message: "",
-  type: "",
-};
+  message: '',
+  type: ''
+}
 
-const localStorageAuthData =
-  JSON.parse(localStorage.getItem("authData")) || null;
+const localStorageAuthData = JSON.parse(localStorage.getItem('authData')) || null
 
-const authData = localStorageAuthData ? { ...localStorageAuthData } : {};
+const authData = localStorageAuthData ? { ...localStorageAuthData } : {}
 
-const language = english;
+const language = english
 
-const initialState = { language, notification, authData };
+const initialState = { language, notification, authData }
 
 /**
  * Reducer
@@ -22,18 +21,18 @@ const initialState = { language, notification, authData };
  */
 const reducer = (state, { type, payload }) => {
   switch (type) {
-    case "setLanguage":
-      return { ...state, ...payload };
+    case 'setLanguage':
+      return { ...state, ...payload }
 
-    case "setAuthData":
-      return { ...state, ...payload };
+    case 'setAuthData':
+      return { ...state, ...payload }
 
-    case "setNotification":
-      return { ...state, ...payload };
+    case 'setNotification':
+      return { ...state, ...payload }
 
     default:
-      throw new Error("No valid action");
+      throw new Error('No valid action')
   }
-};
+}
 
-export { initialState, reducer };
+export { initialState, reducer }

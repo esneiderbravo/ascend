@@ -1,4 +1,4 @@
-import { setAuthData, setNotification } from "../actions/state";
+import { setAuthData, setNotification } from '../actions/state'
 
 /**
  * Manager for user logout operations.
@@ -12,19 +12,19 @@ class LogoutManager {
    */
   static logout(state, dispatch, language) {
     // Clear authentication data from state
-    const emptyAuthData = {};
-    dispatch(setAuthData(emptyAuthData));
+    const emptyAuthData = {}
+    dispatch(setAuthData(emptyAuthData))
 
     // Clear session and local storage
-    sessionStorage.clear();
-    localStorage.clear();
+    sessionStorage.clear()
+    localStorage.clear()
     dispatch(
       setNotification({
-        type: "success",
-        info: language["logoutMessages"]["success"],
-      }),
-    );
+        type: 'success',
+        info: language['logoutMessages']['success']
+      })
+    )
   }
 }
 
-export default LogoutManager;
+export default LogoutManager

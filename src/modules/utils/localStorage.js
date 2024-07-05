@@ -12,9 +12,9 @@ class LocalStorage {
    */
   static setItem(key, value) {
     try {
-      localStorage.setItem(key, value);
+      localStorage.setItem(key, value)
     } catch (error) {
-      console.error(`Error saving ${key}: ${value}`);
+      console.error(`Error saving ${key}: ${value}`)
     }
   }
 
@@ -28,9 +28,9 @@ class LocalStorage {
    */
   static getItem(key) {
     try {
-      return localStorage.getItem(key);
+      return localStorage.getItem(key)
     } catch (error) {
-      console.error(`Error getting ${key}`);
+      console.error(`Error getting ${key}`)
     }
   }
 
@@ -44,11 +44,11 @@ class LocalStorage {
    */
   static removeItem(key) {
     try {
-      return localStorage.removeItem(key);
+      return localStorage.removeItem(key)
     } catch (error) {
-      console.error(`Error removing ${key}`);
+      console.error(`Error removing ${key}`)
     }
   }
 }
 
-export default LocalStorage;
+export default LocalStorage
